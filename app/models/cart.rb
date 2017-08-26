@@ -6,5 +6,6 @@
 # We make no guarantees that this code is fit for any purpose.
 # Visit http://www.pragmaticprogrammer.com/titles/rails5 for more book information.
 #---
-module ApplicationHelper
+class Cart < ApplicationRecord
+  has_many :line_items, dependent: :destroy
 end

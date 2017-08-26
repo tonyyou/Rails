@@ -6,5 +6,7 @@
 # We make no guarantees that this code is fit for any purpose.
 # Visit http://www.pragmaticprogrammer.com/titles/rails5 for more book information.
 #---
-module ApplicationHelper
+class LineItem < ApplicationRecord
+  belongs_to :product
+  belongs_to :cart
 end
